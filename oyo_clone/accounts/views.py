@@ -12,8 +12,8 @@ def register_page(request):
     if(request.method=="POST"):
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
-        password = request.POST.get('email')
-        email = request.POST.get('password')
+        password = request.POST.get('password')
+        email = request.POST.get('email')
         phone_number = request.POST.get('phone_number')
 
         hotel_user = HotelUser.objects.filter(
